@@ -1,11 +1,23 @@
 package kz.ablazim.notesapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import kz.ablazim.notesapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        // Step 1: Create 2 packages named as note_list and create_note
+        // Step 2: In each package create empty fragments named as NoteListFragment and CreateNoteFragment
+        // Step 3: Create empty viewModels named as NoteListViewModel and CreateNoteViewModel
+        // Step 4: Create empty layouts for those 2 fragments
+        // Step 5: Add navigation in MainActivity to NoteListFragment with the help of the replaceFragment extension
+        //         that I have included in FragmentExtensions file
     }
 }

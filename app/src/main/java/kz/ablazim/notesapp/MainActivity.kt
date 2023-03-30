@@ -25,10 +25,7 @@ class MainActivity : AppCompatActivity() {
         // Step 5: Add navigation in MainActivity to NoteListFragment with the help of the replaceFragment extension
         //         that I have included in FragmentExtensions file
 
-        val noteListFragment = NoteListFragment()
         val createNoteFragment = CreateNoteFragment()
         replaceFragment(createNoteFragment)
-
-
     }
 }

@@ -1,6 +1,5 @@
 package kz.ablazim.notesapp.extensions
 
-import android.text.TextUtils.replace
 import androidx.annotation.IdRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
@@ -10,12 +9,14 @@ fun FragmentActivity.replaceFragment(
     fragment: Fragment,
     tag: String = fragment::class.java.name
 ) {
-
-    val fragmentTransaction = supportFragmentManager.beginTransaction()
     supportFragmentManager
         .beginTransaction()                 // get an instance of FragmentTransaction from the FragmentManager
-        .replace(R.id.container, fragment, tag) // replace an existing fragment in a container with an instance of a new fragment class
-        .commit() // call signals to the FragmentManager that all operations have been added to the transaction
+        .replace(
+            R.id.container,
+            fragment,
+            tag
+        )                                   // replace an existing fragment in a container with an instance of a new fragment class
+        .commit()                           // call signals to the FragmentManager that all operations have been added to the transaction
 }
 
 fun Fragment.replaceFragment(

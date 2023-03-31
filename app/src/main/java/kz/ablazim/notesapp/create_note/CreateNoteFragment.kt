@@ -15,13 +15,4 @@ class CreateNoteFragment : Fragment(R.layout.fragment_create_note) {
 
     private lateinit var binding: FragmentCreateNoteBinding
     private val viewModel: CreateNoteViewModel by viewModels()
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        binding = FragmentCreateNoteBinding.inflate(inflater, container, false)
-        replaceFragment(NoteListFragment())
-        return binding.root
-    }
 }

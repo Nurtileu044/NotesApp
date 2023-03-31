@@ -12,16 +12,16 @@ import kz.ablazim.notesapp.extensions.replaceFragment
 import kz.ablazim.notesapp.note_list.NoteListFragment
 
 class CreateNoteFragment : Fragment(R.layout.fragment_create_note) {
-    private val viewModel: CreateNoteViewModel by viewModels()
-    private val noteListFragment = NoteListFragment()
+
     private lateinit var binding: FragmentCreateNoteBinding
+    private val viewModel: CreateNoteViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentCreateNoteBinding.inflate(inflater, container, false)
-        replaceFragment(noteListFragment)
+        replaceFragment(NoteListFragment())
         return binding.root
     }
 }

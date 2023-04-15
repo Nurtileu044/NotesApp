@@ -2,7 +2,6 @@ package kz.ablazim.notesapp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import kz.ablazim.notesapp.create_note.CreateNoteFragment
 import kz.ablazim.notesapp.databinding.ActivityMainBinding
 import kz.ablazim.notesapp.extensions.replaceFragment
 import kz.ablazim.notesapp.note_list.NoteListFragment

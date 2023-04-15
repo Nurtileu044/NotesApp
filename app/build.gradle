@@ -50,4 +50,6 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
     // fragment
     implementation "androidx.fragment:fragment-ktx:1.5.5"
+    // recyclerView
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
 }
